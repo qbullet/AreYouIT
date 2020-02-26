@@ -218,8 +218,8 @@
             </div>
         </template>
         <template v-slot:modal-footer>
-            <b-button type="reset" variant="danger"  @click="fakeClick('resetBtn')">Reset</b-button>
-            <b-button type="submit" variant="primary" @click="fakeClick('submitBtn')">Submit</b-button>
+            <b-button type="reset" variant="danger"  @click="fakeClick('resetBtn')">คืนค่า</b-button>
+            <b-button type="submit" variant="primary" @click="fakeClick('submitBtn')">ยืนยัน</b-button>
         </template>
         
     </b-modal>
