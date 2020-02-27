@@ -367,13 +367,14 @@ export default {
             let heading = ""
             let msg = ""
             let style = ""
+            let percent = resp.value*100
             if(resp.state == 200){
                 heading = "เป็นเรื่องที่น่ายินดี"
-                msg = "คุณเหมาะสมกับสาขาไอที ด้วยค่าความมั่นใจเท่ากับ " + (resp.value*100) + '%'
+                msg = "คุณเหมาะสมกับสาขาไอที ด้วยค่าความมั่นใจเท่ากับ " + percent.toFixed(2) + '%'
                 style = "success"
             }else if(resp.state == 100){
                 heading = "เป็นเรื่องที่น่าเศร้า"
-                msg = "คุณไม่เหมาะกับสาขาไอที ด้วยค่าความมั่นใจเท่ากับ " + (resp.value*100) + '%'
+                msg = "คุณไม่เหมาะกับสาขาไอที ด้วยค่าความมั่นใจเท่ากับ " + percent.toFixed(2) + '%'
                 style = "error"
             }
 
