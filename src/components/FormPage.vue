@@ -250,7 +250,7 @@ export default {
                 testPrepare:null,
                 gaming:null,
                 gpa:null,
-                english:['Fair','Unsatisfy','Good','Execellent'],
+                english:['Fair','Unsatisfy','Good','Excellent'],
 
             },
 
